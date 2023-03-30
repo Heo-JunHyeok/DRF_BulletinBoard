@@ -28,7 +28,7 @@ class PostViewSet(viewsets.ModelViewSet):
         serializer.save(author=self.request.user, profile=profile)
 
 
-@api_view("GET")
+@api_view(["GET"])
 @permission_classes([IsAuthenticated])
 def like_post(request, pk):
     post = get_object_or_404(Post, pk=pk)

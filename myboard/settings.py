@@ -44,7 +44,7 @@ INSTALLED_APPS = [
     "users",
     "corsheaders",
     "posts",
-    "django_filter",
+    "django_filters",  # django_filter -> error
 ]
 
 MIDDLEWARE = [
